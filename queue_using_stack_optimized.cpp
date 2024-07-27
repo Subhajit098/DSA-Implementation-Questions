@@ -60,14 +60,19 @@ public:
 
     bool empty()
     {
-        if (s2.size() != 0)
+        // if (s2.size() != 0)
+        //     return false;
+        // while (s1.size() != 0)
+        // {
+        //     s2.push(s1.top());
+        //     s1.pop();
+        // }
+        // return s2.empty();
+
+        // better code below
+        if (s1.size() != 0 || s2.size() != 0)
             return false;
-        while (s1.size() != 0)
-        {
-            s2.push(s1.top());
-            s1.pop();
-        }
-        return s2.empty();
+        return true;
     }
 };
 
